@@ -363,6 +363,7 @@ private class PobControllerExtTest {
 	        PageReference nextPage = ce.save();
 	        System.assertEquals(sc.view().getUrl(), nextPage.getUrl(), 'Unexpected page reference');
 			List<Order__c> orders = [SELECT Id, Name FROM Order__c];
+		List<Order__c> orders2 = [SELECT Id, Name FROM Order__a];
 	        List<Line_Item__c> lineItems = [SELECT Id, Order__c, Lot__c, Units__c FROM Line_Item__c];
 	        
 	        // ensure Order is created with related line items...
