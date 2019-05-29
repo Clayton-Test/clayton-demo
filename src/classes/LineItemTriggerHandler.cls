@@ -8,7 +8,7 @@ public with sharing class LineItemTriggerHandler {
 		Logic is fully bulkified. */		
 	public static void handle(List<Line_Item__c> items) {
 		
-		List<Order__c> orders2 = [SELECT Purchased__c,Product_Category_1__c,Product_Category_Units_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
+		List<Order__c> ordersAaa = [SELECT Purchased__c,Product_Category_1__c,Product_Category_Units_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
 		
 		// collect related orders
 		Set<Id> orderIds = new Set<Id>();
