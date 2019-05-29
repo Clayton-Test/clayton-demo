@@ -26,6 +26,8 @@ public with sharing class LineItemTriggerHandler {
 
 		update orders;
 		
+		List<Order__c> orders2 = [SELECT Purchased__c,Product_Category_1__c,Product_Category_Units_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
+		
 	}
 	
 	/* Utility methods (not exposed)
