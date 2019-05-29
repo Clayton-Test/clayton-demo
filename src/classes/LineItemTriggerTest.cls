@@ -73,6 +73,8 @@ private class LineItemTriggerTest {
 		
 		// Account manager creates accounts and orders
 		System.runAs(accountManager) {
+			List<Order__c> orders4 = [SELECT Purchased__c,Product_Category_1__c,Product_Category_Units_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
+			
 			List<Account> accounts = TestDataFactory.createAccounts(TEST_VOLUMES_NUMBER_OF_ACCOUNTS);
 			insert accounts;
 			List<Order__c> orders = TestDataFactory.createOrders(accounts);
