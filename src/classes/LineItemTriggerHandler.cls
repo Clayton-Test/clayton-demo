@@ -1,4 +1,4 @@
-public with sharing class LineItemTriggerHandler {
+public class LineItemTriggerHandler {
 		
 	/* Public methods
 	========================= */
@@ -60,7 +60,7 @@ public with sharing class LineItemTriggerHandler {
 	
 	// Sortable wrapper for product categories
 	@TestVisible
-	private class  CategoryWrapper implements Comparable {
+	private class CategoryWrapper implements Comparable {
 		public String name {get;set;}
 		public Decimal units {get;set;}
 		
