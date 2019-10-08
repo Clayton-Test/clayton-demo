@@ -59,8 +59,8 @@ public class LineItemTriggerHandler {
 	========================= */
 	
 	// Sortable wrapper for product categories
-	@TestVisible
-	private class CategoryWrapper implements Comparable {
+	@TestVisible 
+	private class  CategoryWrapper2  implements Comparable {
 		public String name {get;set;}
 		public Decimal units {get;set;}
 		
