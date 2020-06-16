@@ -13,7 +13,7 @@ public without sharing class LineItemTriggerHandler {
 		for (Line_Item__c i : items) {
 			orderIds.add(i.Order__c);
 			
-			//update i;
+			update i;
 		}
 		
 		// load required data: 1) related orders 2) force reload all line items for those orders
