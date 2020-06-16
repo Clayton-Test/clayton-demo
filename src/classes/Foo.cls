@@ -1,4 +1,4 @@
-public inherited sharing class Foo {
+public class Foo {
     void foo() {
         
         String myString = 'MY_HARDCODED_STRING';
